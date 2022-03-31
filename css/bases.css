@@ -1,0 +1,35 @@
+:root {
+    --theme-background-gray: #E5E5E5;
+    --theme-background-lightblue: #EAF2FD;
+    --theme-background-pretobranco: #FFFFFF;
+
+    --background-bottom-darkblue: #2A7AE4;
+    --background-search-gray: #F5F5F5;
+
+    --text-color-darkblue: #2A7AE4;
+    --text-color-white: #FFFFFF;
+
+    --big: 2.2rem;
+    --medium: 1.6rem;
+    --small: 1.4rem
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 1130px)/2);
+        padding-right: calc((100% - 1130px)/2);
+    }
+}
