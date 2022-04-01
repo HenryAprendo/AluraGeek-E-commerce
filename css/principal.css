@@ -1,0 +1,58 @@
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+.icon__logo {
+    width: 10rem;
+}
+.cabecera_input {
+    display: flex;
+    align-items: center;
+}
+.item1 {
+    order: 2;
+}
+.item2 {
+    order: 1;
+}
+.search {
+    display: none;
+}
+.icon__lupa {
+    cursor: pointer;
+}
+.cabecera__btn {
+    height: 4rem;
+    width: 13rem;
+    margin-right: 3rem;
+    border: 1px solid #2A7AE4;
+    background-color: var(--theme-background-pretobranco);
+    outline: none;
+    cursor: pointer;
+}
+.cabecera__btn a {
+    color: var(--text-color-darkblue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
