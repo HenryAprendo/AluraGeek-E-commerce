@@ -37,6 +37,48 @@
     color: var(--text-color-darkblue);
 }
 
+/*Sección de Banner*/
+.banner__img {
+    width: 100vw;
+    max-height: 35rem;
+    object-fit: cover;
+} 
+.banner__informacion {
+    text-align: left;
+    position: relative;
+    top: -125px;
+}
+.banner__titulo {
+    font-size: var(--big);
+    color: orange;
+    font-weight: 700;
+    margin-bottom: .8rem;
+}
+.banner__texto {
+    font-size: var(--small);
+    font-weight: 600;
+    color: orange;
+    margin-bottom: .8rem;
+}
+.banner__btn {
+    padding: 1.2rem 1.6rem;
+    background-color: var(--background-bottom-darkblue);
+    font-size: var(--small);
+    color: var(--text-color-white);
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
