@@ -82,6 +82,7 @@
     font-size: var(--small);
     font-weight: 700;
     color: var(--text-color-darkblue);
+    cursor: pointer;
 }
 
 .product__card {
@@ -90,11 +91,12 @@
     justify-content: space-between;
 }
 .card {
-    /* margin-left: 1%; */
+    margin-bottom: 1.6rem;
 }
 .card_img {
     Width: 156px;
     Height: 174px;
+    object-fit: cover;
 }
 .card__name {
     font-size: var(--small);
@@ -112,7 +114,7 @@
     font-weight: 700;
     color: var(--text-color-darkblue);
     margin-bottom: .8rem;
-
+    cursor: pointer;
 }
 
 
