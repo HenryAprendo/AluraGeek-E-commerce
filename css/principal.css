@@ -40,13 +40,14 @@
 /*Sección de Banner*/
 .banner__img {
     width: 100vw;
-    max-height: 35rem;
+    max-height: 40grem;
     object-fit: cover;
 } 
 .banner__informacion {
-    text-align: left;
-    position: relative;
-    top: -125px;
+    position: absolute;
+    top: 41vw;
+    /* top: 50vw; TABLET */
+    /* top: 35vw; DESKTOP*/
 }
 .banner__titulo {
     font-size: var(--big);
@@ -58,7 +59,7 @@
     font-size: var(--small);
     font-weight: 600;
     color: orange;
-    margin-bottom: .8rem;
+    margin-bottom: 1.6rem;
 }
 .banner__btn {
     padding: 1.2rem 1.6rem;
@@ -69,6 +70,9 @@
 }
 
 /*Sección de productos*/
+.product {
+    margin-top: 1.6rem;
+}
 .product__texto {
     display: flex;
     justify-content: space-between;
