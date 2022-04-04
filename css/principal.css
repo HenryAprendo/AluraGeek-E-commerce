@@ -38,6 +38,9 @@
 }
 
 /*Sección de Banner*/
+.banner {
+    position: relative;
+}
 .banner__img {
     width: 100vw;
     max-height: 40grem;
@@ -45,9 +48,7 @@
 } 
 .banner__informacion {
     position: absolute;
-    top: 41vw;
-    /* top: 50vw; TABLET */
-    /* top: 35vw; DESKTOP*/
+    bottom: 10%;
 }
 .banner__titulo {
     font-size: var(--big);
