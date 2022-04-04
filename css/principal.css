@@ -181,8 +181,17 @@
     cursor: pointer;
 }
 
-
-
+/* Sección Rodapíe */
+.rodapie {
+    background-color: var(--theme-background-pretobranco);
+    padding-top: .8rem;
+    padding-right: .8rem;
+}
+.rodapie p {
+    font-size: var(--small);
+    font-weight: 500;
+    color: navy;
+}
 
 
 
