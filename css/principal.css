@@ -242,6 +242,20 @@
         font-size: var(--big);
         font-weight: 700;
     }
+
+    /* Sección de productos */
+    .product {
+        margin-top: 3.2rem;
+    }
+    .card {
+        margin-bottom: 3.2rem;
+    }
+    .card_img {
+        Width: 164px;
+    }
+    .card__enlace {
+        font-size: var(--medium);
+    }
 }
 
 
