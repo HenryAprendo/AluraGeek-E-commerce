@@ -35,6 +35,7 @@
 }
 .cabecera__btn a {
     color: var(--text-color-darkblue);
+    font-weight: 600;
 }
 
 /*Sección de Banner*/
@@ -194,8 +195,42 @@
 }
 
 
+/* Responsive Design Tablet 768px*/
 
-
+@media screen and (min-width: 768px) {
+    .cabecera_input {
+        width: 53rem;
+        justify-content: space-between;
+    }
+    .item1 {
+        order: 1;
+        display: flex;
+        padding: 1rem;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--theme-background-gray);
+    }
+    .item2 {
+        order: 2;
+    }
+    .search {
+        width: 20rem;
+        font-size: var(--small);
+        display: block;
+        border: transparent;
+        outline: none;
+        background-color: var(--theme-background-gray);
+        margin-right: 1rem;
+    }
+    .icon__lupa {
+       opacity: 0.4;
+       cursor:none;
+    }
+    .cabecera__btn {
+        width: 15rem;
+        margin-right: 0;
+    }
+}
 
 
 
