@@ -44,7 +44,7 @@
 }
 .banner__img {
     width: 100vw;
-    max-height: 40grem;
+    max-height: 35rem;
     object-fit: cover;
 } 
 .banner__informacion {
@@ -53,14 +53,14 @@
 }
 .banner__titulo {
     font-size: var(--big);
-    color: orange;
+    color: darkorange;
     font-weight: 700;
     margin-bottom: .8rem;
 }
 .banner__texto {
     font-size: var(--small);
     font-weight: 600;
-    color: orange;
+    color: var(--text-color-white);
     margin-bottom: 1.6rem;
 }
 .banner__btn {
@@ -69,6 +69,7 @@
     font-size: var(--small);
     color: var(--text-color-white);
     border: none;
+    cursor: pointer;
 }
 
 /*Sección de productos*/
@@ -198,6 +199,8 @@
 /* Responsive Design Tablet 768px*/
 
 @media screen and (min-width: 768px) {
+
+    /* Seccion header */
     .cabecera_input {
         width: 53rem;
         justify-content: space-between;
@@ -229,6 +232,15 @@
     .cabecera__btn {
         width: 15rem;
         margin-right: 0;
+    }
+
+    /* Sección del Banner */
+    .banner__titulo {
+        font-size: 5.2rem;
+    }
+    .banner__texto {
+        font-size: var(--big);
+        font-weight: 700;
     }
 }
 
