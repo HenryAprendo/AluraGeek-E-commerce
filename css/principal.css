@@ -99,6 +99,9 @@
     justify-content: space-between;
     margin-bottom: 1.6rem;
 }
+.card__adicional {
+    display: none;
+}
 .card {
     margin-bottom: 1.6rem;
 }
@@ -277,6 +280,8 @@
 
 /* Responsive design Desktop 1024px */
 @media screen and (min-width: 1120px) {
+
+    /* Sección Header */
     .icon__logo {
         width: 100%;
     }
@@ -294,6 +299,16 @@
     .banner__btn {
         padding: 1.6rem 1.6rem;
     }
+
+    /* Sección de productos */
+    .card__adicional {
+        display: block;
+    }
+    .card_img {
+        Width: 176px;
+    }
+
+
 }
 
 
