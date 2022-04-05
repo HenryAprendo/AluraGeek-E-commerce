@@ -146,6 +146,7 @@
 .info__texto a{
     font-size: var(--medium);
     font-weight: 500;
+    cursor: pointer;
 }
 
 .contacto__formulario {
