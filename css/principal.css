@@ -286,6 +286,14 @@
     .search {
         width: 35rem;
     }
+
+    /* Sección del Banner */
+    .banner__img {
+        max-height: 53rem;
+    } 
+    .banner__btn {
+        padding: 1.6rem 1.6rem;
+    }
 }
 
 
