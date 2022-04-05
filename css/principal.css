@@ -141,7 +141,7 @@
 }
 .info__texto {
     text-align: center;
-    line-height: 36px;
+    line-height: 40px;
 }
 .info__texto a{
     font-size: var(--medium);
@@ -255,9 +255,6 @@
     .card {
         margin-bottom: 3.2rem;
     }
-    .card_img {
-        Width: 164px;
-    }
     .card__enlace {
         font-size: var(--medium);
     }
@@ -280,7 +277,7 @@
 
 
 /* Responsive design Desktop 1024px */
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1024px) {
 
     /* Sección Header */
     .icon__logo {
@@ -302,14 +299,25 @@
     }
 
     /* Sección de productos */
+    .product {
+        margin-top: 4rem;
+        /* margin-bottom: 3.2rem; */
+    }
     .card__adicional {
         display: block;
     }
-    .card_img {
-        Width: 176px;
+    /* Sección de contacto */
+    .contacto__info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
-
-
+    .contacto__formulario {
+        max-width: 500px;
+    }
+    .formulario__btn {
+        padding: 1.6rem 1.6rem;
+    }
 }
 
 
