@@ -191,6 +191,7 @@
 
 /* Sección Rodapíe */
 .rodapie {
+    text-align: center;
     background-color: var(--theme-background-pretobranco);
     padding-top: .8rem;
     padding-right: .8rem;
