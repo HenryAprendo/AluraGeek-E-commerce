@@ -278,7 +278,7 @@
 
 
 /* Responsive design Desktop 1024px */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1030px) {
 
     /* Sección Header */
     .icon__logo {
@@ -306,6 +306,9 @@
     }
     .card__adicional {
         display: block;
+    }
+    .card_img {
+        Width: 176px;
     }
     /* Sección de contacto */
     .contacto__info {
