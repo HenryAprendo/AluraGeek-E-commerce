@@ -191,15 +191,16 @@
 
 /* Sección Rodapíe */
 .rodapie {
-    text-align: center;
     background-color: var(--theme-background-pretobranco);
-    padding-top: .8rem;
-    padding-right: .8rem;
+}
+.rodapie__container {
+    padding: 1.5rem;
 }
 .rodapie p {
     font-size: var(--small);
     font-weight: 500;
     color: navy;
+    text-align: center;
 }
 
 
