@@ -76,15 +76,15 @@
 
 @media screen and (min-width: 1130px) {
         /* Sección Header */
-        .icon__logo {
-            width: 100%;
-        }
-        .cabecera_input {
-            width: 90rem;
-        }
-        .search {
-            width: 35rem;
-        }
+    .icon__logo {
+        width: 100%;
+    }
+    .cabecera_input {
+        width: 90rem;
+    }
+    .search {
+        width: 35rem;
+    }
 }
 
 

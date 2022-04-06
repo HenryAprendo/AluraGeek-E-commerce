@@ -1,0 +1,13 @@
+/* Sección Rodapíe */
+.rodapie {
+    background-color: var(--theme-background-pretobranco);
+}
+.rodapie__container {
+    padding: 1.5rem;
+}
+.rodapie p {
+    font-size: var(--small);
+    font-weight: 500;
+    color: navy;
+    text-align: center;
+}
