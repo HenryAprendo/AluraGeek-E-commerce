@@ -4,6 +4,7 @@
     align-items: center;
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
+    background-color: var(--theme-background-pretobranco);
 }
 .icon__logo {
     width: 10rem;

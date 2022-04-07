@@ -23,6 +23,7 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     color: var(--text-color-descripcion);
+    background-color: var(--theme-background-gray);
 }
 a {
     text-decoration: none;
