@@ -13,7 +13,6 @@
     font-size: var(--big);
     font-weight: 500;
     margin-bottom: .8rem;
-    color: var(--text-color-descripcion);
 }
 .banner__precio {
     font-size: var(--medium);
@@ -22,7 +21,6 @@
 }
 .banner__texto {
     font-size: var(--small);
-    color: var(--text-color-descripcion);
 }
 /*Sección de productos*/
 .product {
