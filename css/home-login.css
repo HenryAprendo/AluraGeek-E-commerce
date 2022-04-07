@@ -44,6 +44,13 @@
 }
 
 
+/* Responsive design */
+
+@media screen and (min-width: 768px) {
+    .login {
+        height: 30rem;
+    }
+}
 
 
 
