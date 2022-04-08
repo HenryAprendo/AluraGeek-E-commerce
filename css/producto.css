@@ -115,10 +115,26 @@
 /* Responsive design Desktop 1130px */
 @media screen and (min-width: 1130px) {
 
+    /* Sección banner */
+    .banner__contenido {
+        margin-left: calc((100% - 1130px) / 2);
+        margin-right: calc((100% - 1130px) / 2);
+        align-items: center;
+        margin-top: 6.4rem;
+    }
+    .contain__img {
+        width: 50%;
+    }
+    .banner__img {
+        height: 40rem;
+    } 
+    .banner__texto {
+        font-size: var(--medium);
+    }
+
     /* Sección de productos */
     .product {
         margin-top: 4rem;
-        /* margin-bottom: 3.2rem; */
     }
     .card__adicional {
         display: block;
