@@ -103,7 +103,8 @@
 
     /* Sección de productos */
     .product {
-        margin-top: 4rem;
+        margin-top: 7rem;
+        margin-bottom: 6.4rem;
     }
     .product__btn {
         width: 17rem;
