@@ -104,7 +104,9 @@
     /* Sección de productos */
     .product {
         margin-top: 4rem;
-        /* margin-bottom: 3.2rem; */
+    }
+    .product__card {
+        gap: 1.48rem;
     }
     .card__adicional {
         display: block;
