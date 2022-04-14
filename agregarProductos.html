@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Principal</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/bases.css">
+        <link rel="stylesheet" href="./componentes/encabezado.css">
+        <link rel="stylesheet" href="./css/agregarProductos.css">
+        <link rel="stylesheet" href="./componentes/contacto.css">
+        <link rel="stylesheet" href="./componentes/footer.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cabecera container">
+            <section class="cabecera__icon">
+                <img class="icon__logo" src="./img/logo/Logo.png" alt="logo de alureGeek"> 
+            </section>
+            <section class="cabecera_input">
+                <div class="item1">
+                    <input class="search" type="text" placeholder="¿Qué deseas buscar?">
+                    <figure>
+                        <img class="icon__lupa" src="./img/logo/lupaBlack.png" alt="">
+                    </figure>
+                </div>
+                <div class="item2">
+                    <button class="cabecera__btn"><a href="">Login</a></button>
+                </div>    
+            </section>   
+        </header>
+
+        <main>
+            <section class="contacto container">
+                <div class="contacto__info">
+                    <figure>
+                        <img src="./img/logo/Logo.png" alt="imagen de logo" class="contacto__img">
+                    </figure>
+                    <div>
+                        <p class="info__texto"><a>Quienes somos</a></p>
+                        <p class="info__texto"><a>Política de privacidad</a></p>
+                        <p class="info__texto"><a>Programa de fidelidad</a></p>
+                        <p class="info__texto"><a>Nuestras tiendas</a></p>
+                        <p class="info__texto"><a>Quiero ser franquiciado</a></p>
+                        <p class="info__texto"><a>Anúncie aquí</a></p>
+                    </div>
+                </div>
+                <form class="contacto__formulario">
+                    <h2 class="formulario__titulo">Hable con nosotros</h2>
+                    <input type="text" class="formulario__input" placeholder="Nombre">
+                    <textarea class="formulario__mensaje" cols="30" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                    <input class="formulario__btn" type="submit" value="Enviar mensaje">
+                </form>
+            </section>
+        </main>
+
+        <footer class="rodapie container">
+            <div class="rodapie__container">
+                <p>E-commerce Alura Geek | Henry J Salazar | Oracle Next Education</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
