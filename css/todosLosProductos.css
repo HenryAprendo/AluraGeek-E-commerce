@@ -105,6 +105,14 @@
     .product {
         margin-top: 4rem;
     }
+    .product__btn {
+        width: 17rem;
+        padding: 1.6rem ;
+    }
+    .product__enlace {
+        font-size: var(--medium);
+        font-weight: 400;
+    }
     .product__card {
         gap: 1.48rem;
     }
