@@ -1,3 +1,4 @@
+/* Cuadro de agregar imagenes */
 .add__container__auxiliar {
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
@@ -7,6 +8,44 @@
     font-weight: bold;
     margin-bottom: 1.6rem;
 }
+.add__img-producto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+}
+.img__container {
+    height: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--theme-background-pretobranco);
+    border: 1px dashed #C8C8C8;
+    cursor: pointer;
+
+}
+.img__container figcaption {
+    font-size: var(--small);
+}
+
+/* Boton agregar */
+.container__boton {
+    display: none;
+}
+.add__img-producto span {
+    font-size: var(--medium);
+}
+.add__boton {
+    font-size: var(--medium);
+    padding: 1.2rem;
+    border: 1px solid var(--background-bottom-darkblue);
+    cursor: pointer;
+}
+.add__boton a {
+    color: var(--text-color-darkblue);
+}
+
+/* Formulario de descripción del producto */
 .add__form {
     display: flex;
     flex-direction: column;
