@@ -26,6 +26,7 @@
 }
 .img__container figcaption {
     font-size: var(--small);
+    color: var(--text-color-placeholder);
 }
 
 /* Boton agregar */
@@ -67,7 +68,7 @@
 .label {
     display: block;
     font-size: var(--medium);
-    color: #A2A2A2;
+    color: var(--text-color-placeholder);
 }
 .form__mensaje {
     font-size: var(--medium);
@@ -77,6 +78,9 @@
     border-radius: 4px;
     border-bottom: 1px solid #C8C8C8;
     outline: none;
+}
+.form__mensaje::placeholder {
+    color: var(--text-color-placeholder);
 }
 .form__btn-add {
     height: 5.1rem;
