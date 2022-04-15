@@ -1,0 +1,9 @@
+.add__container__auxiliar {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+.add__titulo {
+    font-size: var(--big);
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+}
