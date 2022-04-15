@@ -7,3 +7,69 @@
     font-weight: bold;
     margin-bottom: 1.6rem;
 }
+.add__form {
+    display: flex;
+    flex-direction: column;
+}
+.form__inputs {
+    margin-bottom: 1.6rem;
+    background-color: var(--theme-background-pretobranco);
+    height: 5.6rem;
+    border-radius: 4px;
+    border-bottom: 1px solid #C8C8C8;
+}
+.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: transparent;
+    outline: none;
+}
+.label {
+    display: block;
+    font-size: var(--medium);
+    color: #A2A2A2;
+}
+.form__mensaje {
+    font-size: var(--medium);
+    padding: 1.2rem;
+    margin-bottom: 1.6rem;
+    border: transparent;
+    border-radius: 4px;
+    border-bottom: 1px solid #C8C8C8;
+    outline: none;
+}
+.form__btn-add {
+    height: 5.1rem;
+    font-size: var(--medium);
+    color: var(--text-color-white);
+    background-color: var(--background-bottom-darkblue);
+    border: transparent;
+    cursor: pointer;
+}
+.form__btn-add:hover {
+    box-shadow: 0.5px 0.5px 0.5px 1px darkblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
