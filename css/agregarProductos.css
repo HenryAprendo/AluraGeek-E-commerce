@@ -22,7 +22,6 @@
     background-color: var(--theme-background-pretobranco);
     border: 1px dashed #C8C8C8;
     cursor: pointer;
-
 }
 .img__container figcaption {
     font-size: var(--small);
@@ -41,6 +40,7 @@
     padding: 1.2rem;
     border: 1px solid var(--background-bottom-darkblue);
     cursor: pointer;
+    margin-left: 0.8rem;
 }
 .add__boton a {
     color: var(--text-color-darkblue);
@@ -118,7 +118,21 @@
 }
 
 
-
+/* Responsive design 768px */
+@media screen and (min-width: 768px) {
+    .add__img-producto {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1.6rem;
+    }
+    .img__container {
+        margin-right: 0.8rem;
+        width: 26rem;
+    }
+    .container__boton {
+        display: block;
+    }
+}
 
 
 
