@@ -27,6 +27,9 @@
     font-size: var(--small);
     color: var(--text-color-placeholder);
 }
+.img__container figcaption:nth-child(3) {
+    display: none;
+}
 
 /* Boton agregar */
 .container__boton {
@@ -128,6 +131,13 @@
     .img__container {
         margin-right: 0.8rem;
         width: 26rem;
+    }
+    .img__container figcaption:nth-child(2) {
+        display: none;
+    }
+    .img__container figcaption:nth-child(3) {
+        display: block;
+        text-align: center;
     }
     .container__boton {
         display: block;
