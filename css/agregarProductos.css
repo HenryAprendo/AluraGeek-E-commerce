@@ -1,5 +1,5 @@
 /* Cuadro de agregar imagenes */
-.add__container__auxiliar {
+.add__container-auxiliar {
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
 }
@@ -43,7 +43,7 @@
     padding: 1.2rem;
     border: 1px solid var(--background-bottom-darkblue);
     cursor: pointer;
-    margin-left: 0.8rem;
+    margin-left: 1rem;
 }
 .add__boton a {
     color: var(--text-color-darkblue);
@@ -123,14 +123,19 @@
 
 /* Responsive design 768px */
 @media screen and (min-width: 768px) {
+    .add__container-auxiliar {
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+    }
     .add__img-producto {
         flex-direction: row;
         align-items: center;
         margin-bottom: 1.6rem;
     }
     .img__container {
-        margin-right: 0.8rem;
+        margin-right: 0.9rem;
         width: 26rem;
+        height: 15rem;
     }
     .img__container figcaption:nth-child(2) {
         display: none;
@@ -142,6 +147,25 @@
     .container__boton {
         display: block;
     }
+}
+
+/*Responsive design 1130px*/
+@media screen and (min-width: 1130px) {
+    .add__container-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .add__container-auxiliar {
+        width: 60rem;
+    }
+    .add__titulo {
+        font-size: var(--big);
+    }
+    .img__container {
+        width: 36rem;
+    }   
 }
 
 
