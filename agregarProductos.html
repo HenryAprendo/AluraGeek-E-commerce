@@ -52,14 +52,38 @@
 
                         <div>
                             <form class="add__form">
-                                <div class="form__inputs">
+                                <!-- <div class="form__inputs">
                                     <input class="input__nombre input" type="text">
                                     <label class="label__nombre label" for="">Nombre del producto</label>
                                 </div>
                                 <div class="form__inputs">
                                     <input class="input__precio input" type="text">
                                     <label class="label__precio label" for="">Precio del producto</label>
-                                </div>
+                                </div> -->
+                                <div class="input-container">
+                                    <input
+                                      name="nombre"
+                                      id="nombre"
+                                      class="input"
+                                      type="text"
+                                      placeholder="Nombre del producto"
+                                      required
+                                      autocomplete="off"
+                                    />
+                                    <label class="input-label" for="nombre">Nombre del producto</label>
+                                  </div>
+                                  <div class="input-container">
+                                    <input
+                                      name="email"
+                                      id="email"
+                                      class="input"
+                                      type="text"
+                                      placeholder="Precio del producto"
+                                      required
+                                      autocomplete="off"
+                                    />
+                                    <label class="input-label" for="email">Precio del producto</label>
+                                  </div>
                                 <textarea class="form__mensaje" name="" id="" cols="30" rows="4" placeholder="Descripción del producto"></textarea>
                                 <input class="form__btn-add" type="submit" value="Agregar producto">
                             </form>
