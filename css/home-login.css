@@ -29,6 +29,9 @@
 .login__input::placeholder {
     color: var(--text-color-placeholder);
 }
+.input__email {
+    border-bottom: 1px solid #C8C8C8;
+}
 .input__password {
     border-bottom: 1px solid #C8C8C8;
 }
