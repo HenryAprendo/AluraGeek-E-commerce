@@ -31,14 +31,11 @@
     margin-right: 3rem;
     border: 1px solid #2A7AE4;
     background-color: var(--theme-background-pretobranco);
+    color: var(--text-color-darkblue);
+    font-weight: 600;
     outline: none;
     cursor: pointer;
 }
-.cabecera__btn a {
-    color: var(--text-color-darkblue);
-    font-weight: 600;
-}
-
 /* Responsive design */
 @media screen and (min-width: 768px) {
     /* Sección del header */
