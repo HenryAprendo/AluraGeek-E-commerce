@@ -38,6 +38,10 @@
     border-bottom: 1px solid #B4B4B4;
     outline: none;
 }
+.input-nombre:focus {
+    border: 1px solid #0000ff;
+}
+
 .formulario__mensaje {
     font-size: var(--medium);
     padding: .8rem;
@@ -47,6 +51,10 @@
     border-radius: 4px;
     border-bottom: 1px solid #B4B4B4;
 }
+.input-mensaje:focus {
+    border: 1px solid #0000ff;
+}
+
 .formulario__btn {
     width: 13rem;
     font-size: var(--small);
@@ -57,6 +65,33 @@
     margin-top: 1rem;
     cursor: pointer;
 }
+
+/*Mensajes de error*/
+.contacto__formulario-error .input-nombre {
+    border: 1px solid #A40000;
+}
+.contacto__formulario-error .input-nombre::placeholder {
+    color: #A40000;
+}
+.contacto__formulario-error .input-mensaje {
+    border: 1px solid #A40000;
+}
+.contacto__formulario-error .input-mensaje::placeholder {
+    color: #A40000;
+}
+
+.mensaje__input-error {
+    font-size: var(--small);
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.contacto__formulario-error .mensaje__input-error {
+    color: #A40000;
+    display: block;
+}
+
+
 
 @media screen and (min-width: 768px) {
     /* Sección contacto */
