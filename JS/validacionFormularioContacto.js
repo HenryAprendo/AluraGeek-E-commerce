@@ -7,6 +7,17 @@ const test = {
     campoMensaje: false
 };
 
+function addClass(elemento, clase) {
+    elemento.classList.add(clase);
+}
+
+function removeClass(elemento, clase) {
+    elemento.classList.remove(clase);
+}
+
+
+
+
 
 const validarNombre = (valor) => {
 
@@ -14,19 +25,20 @@ const validarNombre = (valor) => {
     error.innerHTML = '';
 
     const formulario = document.querySelector('[data-formulario]');
+    const clase = 'contacto__formulario-error-input';
 
     if (valor.validity.valueMissing) {
-        formulario.classList.add('contacto__formulario-error-input');
+        addClass(formulario, clase);
         error.innerHTML = 'Completa el campo nombre'; 
     }
     else if (valor.validity.patternMismatch) {
-        formulario.classList.add('contacto__formulario-error-input');
+        addClass(formulario, clase);
         error.innerHTML = 'Solo letras mayúsculas, minúsculas y espacios. Maximo 40 carácteres'; 
 
     }
     else {
         error.innerHTML = '';
-        formulario.classList.remove('contacto__formulario-error-input');
+        removeClass(formulario, clase);
         test.campoNombre = true;     
     }
     
@@ -37,32 +49,39 @@ const validarMensaje = (valor) => {
     const error = document.querySelector('[data-mensaje-error]');
     error.innerHTML = '';
 
+    const formulario = document.querySelector('[data-formulario]');
+    const clase = 'contacto__formulario-error-mensaje';
+
     if (valor.validity.valueMissing) {
-        document.querySelector('[data-formulario]').classList.add('contacto__formulario-error-mensaje');
+        addClass(formulario, clase); 
         error.innerHTML = 'Completa el campo mensaje'; 
     }
     else {
         error.innerHTML = '';
-        document.querySelector('[data-formulario]').classList.remove('contacto__formulario-error-mensaje');
+        removeClass(formulario, clase);
         test.campoMensaje = true;
     }
     
 }
 
 const mostrarMensajesDeValidacion = () => {
-    const formulario = document.querySelector('[data-formulario]');
     
     const mensaje = document.querySelector('[data-incompleto]');
     mensaje.innerHTML = '';
 
+    const formulario = document.querySelector('[data-formulario]');
+    const clase = 'formulario__completo';
+    const grupoDeClases = [ 'contacto__formulario-error-incompleto', 'contacto__formulario-error-input', 'contacto__formulario-error-mensaje' ];
+
     if (test.campoNombre && test.campoMensaje) {
 
         formulario.classList.remove('contacto__formulario-error-incompleto', 'contacto__formulario-error-input', 'contacto__formulario-error-mensaje');
-        mensaje.classList.add('formulario__completo');
+        // removeClass(formulario, grupoDeClases);
+        addClass(mensaje, clase);
         mensaje.innerHTML = 'Su mensaje ha sido enviado con éxito';
 
         setTimeout( () => {
-            mensaje.classList.remove('formulario__completo');
+            removeClass(mensaje, clase);
         }, 5000);
 
         test.campoNombre = false;
