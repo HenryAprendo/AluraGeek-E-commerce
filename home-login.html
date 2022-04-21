@@ -36,13 +36,30 @@
         <main>
 
             <section class="login">
-                <div>
-                    <h1 class="login__titulo">Iniciar sesión</h1>
-                    <form class="login__form">
-                        <input class="login__input input__email" type="text" name="email" placeholder="Escriba su correo eléctronico" autocomplete="off">
-                        <input class="login__input input__password" type="text" name="password" placeholder="Escriba su contraseña" autocomplete="off">
-                        <input class="login__btn" type="submit">
-                    </form>
+                <div class="login__container-principal">
+                    <div class="login__container-auxiliar container">
+                        <h1 class="login__titulo">Iniciar sesión</h1>
+                        <form class="login__form">
+
+                            <div class="container__input">
+                                <label class="label">Correo eléctronico</label>
+                                <input class="login__input input__email input" type="text" name="email" 
+                                placeholder="Escriba su correo eléctronico" autocomplete="off">
+                                <span class="mensaje-error">El campo no puede estar vacio</span>
+                            </div>
+
+                            <div class="container__input">
+                                <label class="label">Contraseña</label>
+                                <input class="login__input input__password input" type="text" name="password" 
+                                placeholder="Escriba su contraseña" autocomplete="off">
+                                <span class="mensaje-error">El campo no puede estar vacio</span>
+                            </div>
+                            
+                            <input class="login__btn" type="submit" value="Entrar">
+                            <span class="mensaje-error">Diligencie el formulario completamente</span>
+                        
+                        </form>
+                    </div>
                 </div>
             </section>
 
