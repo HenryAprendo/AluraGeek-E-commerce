@@ -60,11 +60,19 @@
                         <p class="info__texto"><a>Anúncie aquí</a></p>
                     </div>
                 </div>
-                <form class="contacto__formulario">
+                <form class="contacto__formulario" data-formulario novalidate>
                     <h2 class="formulario__titulo">Hable con nosotros</h2>
-                    <input type="text" class="formulario__input" placeholder="Nombre">
-                    <textarea class="formulario__mensaje" cols="30" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                    
+                    <input type="text" class="formulario__input input-nombre" placeholder="Nombre" name="nombre" data-nombre
+                    required pattern="^[a-zA-ZÀ-ÿ\s]{1,40}$" maxlength="40" autocomplete="off">
+                    <span class="mensaje__input-error" data-input-error>El campo no puede estar vacio</span>
+
+                    <textarea class="formulario__mensaje input-mensaje" cols="30" rows="4" placeholder="Escribe tu mensaje" name="mensaje" 
+                    data-mensaje required pattern="^[a-zA-ZÀ-ÿ0-9.,;\s]{1,120}$" maxlength="120" ></textarea>
+                    <span class="mensaje__textarea-error" data-mensaje-error>El campo no puede estar vacio</span>
+
                     <input class="formulario__btn" type="submit" value="Enviar mensaje">
+                    <span class="formulario__incompleto" data-incompleto>Diligencie el formulario completamente</span>
                 </form>
             </section>
         </main>
