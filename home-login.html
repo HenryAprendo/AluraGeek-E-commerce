@@ -43,15 +43,34 @@
                                 <h1 class="login__titulo">Iniciar sesión</h1>
                                 <div class="container__input">
                                     <label class="label">Correo eléctronico</label>
-                                    <input class="login__input input__email input" type="text" name="email" 
-                                    placeholder="Escriba su correo eléctronico" autocomplete="off">
+                                    <input 
+                                        class="login__input input__email input" 
+                                        type="text" 
+                                        name="email" 
+                                        pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                                        required 
+                                        placeholder="Escriba su correo eléctronico" 
+                                        autocomplete="off"
+                                        data-correo>
+                                        
+
                                     <span class="mensaje-error">El campo no puede estar vacio</span>
                                 </div>
     
                                 <div class="container__input">
                                     <label class="label">Contraseña</label>
-                                    <input class="login__input input__password input" type="text" name="password" 
-                                    placeholder="Escriba su contraseña" autocomplete="off">
+                                    <input 
+                                        class="login__input input__password input" 
+                                        type="password"
+                                        name="password" 
+                                        required
+                                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+                                        title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, 
+                                        una letra mayúscula, un número y no puede contener caracteres especiales."
+                                        placeholder="Escriba su contraseña" 
+                                        autocomplete="off"
+                                        data-password>
+
                                     <span class="mensaje-error">El campo no puede estar vacio</span>
                                 </div>
                                 
