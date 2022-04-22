@@ -1,46 +1,51 @@
-export const validarInputs = (input) => {   
+const errores = ['valueMissing', 'patternMismatch'];
+
+export const validarInputs = (input, clase) => {   
 
     const tipoDeInput = input.name;
-    console.log(tipoDeInput);
+    let tipoDeError = '';
+    let limpiar= '';
+
+    errores.forEach( error => {
+        if (input.validity[error]) {
+           tipoDeError = error;
+        }
+    });
+    
 
     if (input.validity.valid) {
-        console.log('valido')
-
-        input.parentElement.classList.remove('container__input-invalid');
-        input.nextElementSibling.innerHTML = '';
+        input.parentElement.classList.remove(clase);
+        input.nextElementSibling.innerHTML = limpiar;
     }
     else {
-        console.log('Invalido')
-        input.parentElement.classList.add('container__input-invalid');
-        
+        input.parentElement.classList.add(clase);
+        input.nextElementSibling.innerHTML = limpiar;
+
         if (input.validity.valueMissing) {
-            input.nextElementSibling.innerHTML = mostrarMensajeError(tipoDeInput);
+            input.nextElementSibling.innerHTML = mostrarMensajeError(tipoDeInput, tipoDeError);
         }
         else if (input.validity.patternMismatch) {
-            input.nextElementSibling.innerHTML = `formato requerido correo@alura.com`;
+            input.nextElementSibling.innerHTML = mostrarMensajeError(tipoDeInput, tipoDeError);
         }
     }
 };
 
-
 const mensajesErrores = {
     email:  {
-        valueMissing: `Completa este campo`,
-        patternMismatch: `formato requerido correo@alura.com`
+        valueMissing: 'Completa este campo',
+        patternMismatch: 'formato requerido correo@alura.com'
     },
     
     password: {
-        valueMissing: `Completa este campo`,
-        patternMismatch: `Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, 
-                        una letra mayúscula, un número y no puede contener caracteres especiales.`
+        valueMissing: 'Completa este campo',
+        patternMismatch: 'Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales.'
     }
-
 }
 
-
-function mostrarMensajeError(tipo) {
-    const mensaje = mensajesErrores[tipo];
-    console.log(mensaje);
+function mostrarMensajeError(tipo, error) {
+    console.log(tipo, error)
+    const mensaje = mensajesErrores[tipo][error];
+    return mensaje;
 }
 
 
