@@ -66,7 +66,8 @@
                                         type="text" 
                                         name="nombre" 
                                         required 
-                                        placeholder="Nombre del producto" 
+                                        pattern="^[a-zA-ZÀ-ÿ\s]{1,20}$"
+                                        placeholder="Producto XYZ" 
                                         autocomplete="off"
                                         >
                                         
@@ -79,7 +80,8 @@
                                         type="text" 
                                         name="precio" 
                                         required 
-                                        placeholder="60,00" 
+                                        pattern="^\d{2,10}$"
+                                        placeholder="$ 60,00" 
                                         autocomplete="off"
                                         >
                                         
@@ -87,7 +89,7 @@
                                 </div>
                                 <div class="container__input ">
                                     <label class="label">Descripción del producto</label>    
-                                    <textarea class="login__mensaje input__mensaje input " name="mensaje" id="" cols="30" rows="4" placeholder="Descripción del producto"></textarea>
+                                    <textarea class="login__mensaje input__mensaje" name="mensaje" id="" cols="30" rows="4" pattern="^[a-zA-ZÀ-ÿ0-9.,;\s]{1,150}$" placeholder="Descripción del producto"></textarea>
                                     <span class="mensaje-error">El campo no puede estar vacio</span>
                                 </div>
                                 
@@ -135,6 +137,7 @@
             </div>
         </footer>
 
+        <script type="module" src="/JS/formularios/validacionFormularioAgregarProducto.js"></script>
         <script src="./JS/formularios/validacionFormularioContacto.js"></script>
     </body>
 </html>

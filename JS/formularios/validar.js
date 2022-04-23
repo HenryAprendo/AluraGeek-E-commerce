@@ -3,6 +3,7 @@ const errores = ['valueMissing', 'patternMismatch'];
 export const validarInputs = (input, clase) => {   
 
     const tipoDeInput = input.name;
+    console.log(tipoDeInput);
     let tipoDeError = '';
     let limpiar= '';
 
@@ -39,7 +40,16 @@ const mensajesErrores = {
     password: {
         valueMissing: 'Completa este campo',
         patternMismatch: 'Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales.'
-    }
+    },
+
+    nombre:  {
+        valueMissing: 'Completa este campo',
+        patternMismatch: 'El formato requerido es solo carácteres Ejemplo: Consola'
+    },
+    precio:  {
+        valueMissing: 'Completa este campo',
+        patternMismatch: 'El formato requerido es solo números, mínimo 2 y máximo 10'
+    },
 }
 
 function mostrarMensajeError(tipo, error) {
