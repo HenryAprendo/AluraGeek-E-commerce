@@ -18,17 +18,20 @@ export const habilitarBotonEntrar = (evento) => {
 
 }
 
+/*Autenticación del usuario */
 export const loginUsuario = () => {
 
     const correoAdmin = 'henry@alura.com';
     const passwordAdmin = 'Admingeek1';
     
     if ( (inputEmail.value === correoAdmin) && (inputPassword.value === passwordAdmin) ) {
-        console.log('Inicio de sesión');
         window.location.href = "/todosLosProductos.html";
     }
     else {
-        console.log('clave o correo invalido');
+        botonEntrar.nextElementSibling.classList.add('correo-contraseña-invalida');
+        setTimeout( () => {
+            botonEntrar.nextElementSibling.classList.remove('correo-contraseña-invalida');
+        }, 5000);
     }
 
 }
