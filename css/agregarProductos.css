@@ -50,74 +50,75 @@
 }
 
 /* Formulario de descripción del producto */
-.add__form {
+.agregar__producto {
     display: flex;
     flex-direction: column;
 }
-
-.input-container {
-    position: relative;
+.container__input {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 1.6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #C8C8C8;
 }
-.input {
-    box-sizing: border-box;
-    width: 100%;
+.label {
+    font-size: var(--small);
+    font-weight: 500;
+    color: dodgerblue;
+    margin-bottom: 0.8rem;
+}
+.login__input {
     height: 5.6rem;
-    padding: 3rem 1rem 0.5rem;
+    font-size: var(--medium);
+    padding: 0.8rem 1.2rem;
+    box-sizing: border-box;
+    margin-bottom: 0.8rem;
+    border-radius: 4px;
     border: transparent;
-    color: var(--text-color-descripcion);
-}
-.input::placeholder {
-    visibility: hidden;
-    color: #000000;
-}
-.input:focus {
+    border-bottom: 1px solid #C8C8C8;
     outline: none;
 }
-.input-label {
-    font-size: 1.6rem;
+.login__input::placeholder, .login__mensaje::placeholder {
     color: var(--text-color-placeholder);
-    position: absolute;
-    top: 3rem;
-    left: 1.1rem;
 }
-  
-.input:not(:placeholder-shown) + .input-label,
-.input:focus + .input-label {
-    font-size: 1.2rem;
-    top: 0.75rem;
-    transition: all 0.25s;
+.input__nombre:focus, .input__precio:focus {
+    border: 1px solid #0000ff;
 }
-
-/*Textarea*/
-.form__mensaje {
+.login__mensaje {
     font-size: var(--medium);
     padding: 1.2rem;
-    margin-bottom: 1.6rem;
-    border: transparent;
+    margin-bottom: 0.8rem;
     border-radius: 4px;
+    border: transparent;
     border-bottom: 1px solid #C8C8C8;
     outline: none;
 }
-.form__mensaje::placeholder {
-    color: var(--text-color-placeholder);
-}
-.form__btn-add {
-    height: 5.1rem;
-    font-size: var(--medium);
+
+
+.login__btn {
+    height: 5.2rem;
+    font-size: var(--small);
+    background-color: var(--text-color-darkblue);
     color: var(--text-color-white);
-    background-color: var(--background-bottom-darkblue);
+    padding: 1.2rem 1.6rem;
     border: transparent;
+    margin-bottom: 1.6rem;   
     cursor: pointer;
 }
-.form__btn-add:hover {
-    box-shadow: 0.5px 0.5px 0.5px 1px darkblue;
+.login__btn:hover {
+    border: 1px solid black;
+}
+
+/*Manejo de errores*/
+
+.mensaje-error {
+    font-size: var(--small);
+    color: #A40000;
+    display: none;
+}
+.container__input-invalid .mensaje-error {
+    display: block;
+}
+.container__input-invalid .login__input {
+    border: 1px solid #A40000;
 }
 
 

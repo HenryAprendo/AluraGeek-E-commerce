@@ -58,33 +58,40 @@
                         </div>
 
                         <div>
-                            <form class="add__form">
-                                <div class="input-container">
-                                    <input
-                                      name="nombre"
-                                      id="nombre"
-                                      class="input"
-                                      type="text"
-                                      placeholder="Nombre del producto"
-                                      required
-                                      autocomplete="off"
-                                    />
-                                    <label class="input-label" for="nombre">Nombre del producto</label>
-                                  </div>
-                                  <div class="input-container">
-                                    <input
-                                      name="email"
-                                      id="email"
-                                      class="input"
-                                      type="text"
-                                      placeholder="Precio del producto"
-                                      required
-                                      autocomplete="off"
-                                    />
-                                    <label class="input-label" for="email">Precio del producto</label>
-                                  </div>
-                                <textarea class="form__mensaje" name="" id="" cols="30" rows="4" placeholder="Descripción del producto"></textarea>
-                                <input class="form__btn-add" type="submit" value="Agregar producto">
+                            <form class="agregar__producto">
+                                <div class="container__input">
+                                    <label class="label">Nombre del producto</label>
+                                    <input 
+                                        class="login__input input__nombre input" 
+                                        type="text" 
+                                        name="nombre" 
+                                        required 
+                                        placeholder="Nombre del producto" 
+                                        autocomplete="off"
+                                        >
+                                        
+                                    <span class="mensaje-error">El campo no puede estar vacio</span>
+                                </div>
+                                <div class="container__input">
+                                    <label class="label">Precio del producto</label>
+                                    <input 
+                                        class="login__input input__precio input" 
+                                        type="text" 
+                                        name="precio" 
+                                        required 
+                                        placeholder="60,00" 
+                                        autocomplete="off"
+                                        >
+                                        
+                                    <span class="mensaje-error">El campo no puede estar vacio</span>
+                                </div>
+                                <div class="container__input">
+                                    <label class="label">Descripción del producto</label>    
+                                    <textarea class="login__mensaje input__mensaje input " name="mensaje" id="" cols="30" rows="4" placeholder="Descripción del producto"></textarea>
+                                    <span class="mensaje-error">El campo no puede estar vacio</span>
+                                </div>
+                                
+                                <input class="login__btn" type="submit" value="Agregar producto">
                             </form>
                         </div>
                     </div>
