@@ -24,6 +24,9 @@
     font-weight: 600;
     color: var(--text-color-white);
 }
+.product__btn:hover {
+    border: 1px solid black;
+}
 
 .product__card {
     display: flex;
@@ -109,10 +112,9 @@
     .product__btn {
         width: 17rem;
         padding: 1.6rem ;
-    }
-    .product__enlace {
         font-size: var(--medium);
         font-weight: 400;
+        color: var(--text-color-white);
     }
     .product__card {
         gap: 1.48rem;
