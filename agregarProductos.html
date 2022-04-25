@@ -89,7 +89,8 @@
                                 </div>
                                 <div class="container__input ">
                                     <label class="label">Descripción del producto</label>    
-                                    <textarea class="login__mensaje input__mensaje" name="mensaje" id="" cols="30" rows="4" pattern="^[a-zA-ZÀ-ÿ0-9.,;\s]{1,150}$" placeholder="Descripción del producto"></textarea>
+                                    <textarea class="login__mensaje input__mensaje input" name="mensaje" id="" cols="30" rows="4" 
+                                    required pattern="^[a-zA-ZÀ-ÿ0-9.,;\s]{1,150}$" minlength="20"  placeholder="Descripción del producto"></textarea>
                                     <span class="mensaje-error">El campo no puede estar vacio</span>
                                 </div>
                                 
@@ -141,11 +142,6 @@
         <script src="./JS/formularios/validacionFormularioContacto.js"></script>
     </body>
 </html>
-
-
-
-
-
 
 
 
