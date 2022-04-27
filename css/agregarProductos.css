@@ -44,8 +44,6 @@
     border: 1px solid var(--background-bottom-darkblue);
     cursor: pointer;
     margin-left: 1rem;
-}
-.add__boton a {
     color: var(--text-color-darkblue);
 }
 
@@ -162,7 +160,7 @@
         height: 100vh;
     }
     .add__container-auxiliar {
-        width: 60rem;
+        width: 80rem;
     }
     .add__titulo {
         font-size: var(--big);
