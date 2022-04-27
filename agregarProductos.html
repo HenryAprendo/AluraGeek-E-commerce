@@ -45,19 +45,20 @@
 
                                 <div class="add__img-producto">
 
-                                    <figure class="img__container">
+                                    <figure class="img__container " data-box>
                                         <picture>
                                             <!-- <source media="(min-width: 1130px)" srcset="./img/logo/Geek.png"> -->
                                             <source media="(min-width: 768px)" srcset="./img/logo/insertar.png">
                                             <img src="./img/logo/add.png" alt="agregar">
                                         </picture>
                                         <figcaption>Agregar una imagén para el producto</figcaption>
-                                        <figcaption>Arrastre para agregar una <br>imagén para el producto</figcaption>
+                                        <figcaption class="quitar__texto">Arrastre para agregar una <br>imagén para el producto</figcaption>
+    
                                     </figure>
         
                                     <div class="container__boton">
                                         <span>O</span>
-                                        <input type="file" class="add__boton">
+                                        <input type="file" class="add__boton" data-file>
                                     </div>
                                 </div>
 
@@ -140,6 +141,7 @@
             </div>
         </footer>
 
+        <script src="./JS/agregarProductos/agregarProductos.js"></script>
         <script type="module" src="/JS/formularios/validacionFormularioAgregarProducto.js"></script>
         <script src="./JS/formularios/validacionFormularioContacto.js"></script>
     </body>
