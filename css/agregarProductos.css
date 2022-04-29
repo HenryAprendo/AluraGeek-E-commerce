@@ -11,8 +11,8 @@
 
 .zona__drog {
     max-width: 300px;
-    height: 20rem;
-    padding: 2.5rem;
+    height: 30rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,6 +45,7 @@
     overflow: hidden;
     background-color: #cccccc;
     background-size: cover;
+    object-fit: cover;
 }
 .drop-zona__input {
     display: none;
