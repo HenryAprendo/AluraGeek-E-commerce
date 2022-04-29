@@ -34,7 +34,6 @@ inputFile.forEach( inputElement => {
 
         if (e.dataTransfer.files.length) {
             inputElement.files = e.dataTransfer.files;
-            console.log(inputElement.files)
             previsualizarImagenEnZona(zonaDropElemento, e.dataTransfer.files[0]);
         }
 
@@ -55,15 +54,19 @@ function previsualizarImagenEnZona(zonaDropElemento, file) {
         zonaDropElemento.querySelector('.zona__drog__prompt').remove();
     }
     
+
     /*Creando el elemento de despliegue de la imagen */
 
     if (!zonaDropImagen) {
         zonaDropImagen = document.createElement('div');
         zonaDropImagen.classList.add('zona__drog__imagen');
         zonaDropElemento.appendChild(zonaDropImagen);
+
     }
 
+
     /*Despliegue de la imagén */
+
     if (file.type.startsWith('image/')) {
         const reader = new FileReader();
         reader.readAsDataURL(file);
@@ -75,6 +78,13 @@ function previsualizarImagenEnZona(zonaDropElemento, file) {
         zonaDropImagen.style.backgroundImage = null;
     }
 
+
+    /*Visualizando el nombre del producto */
+
+    const nombreProducto = document.querySelector('.nombre__producto')
+    nombreProducto.classList.add('zona__drop__nombre-producto');
+    nombreProducto.innerHTML = '';
+    nombreProducto.innerHTML = `Producto agregado: ${ file.name }`;
 
 }
 
