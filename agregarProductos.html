@@ -43,23 +43,21 @@
                         <div>
                             <form class="agregar__producto">
 
-                                <div class="add__img-producto">
+                                <div class="zona__drog">
 
-                                    <figure class="img__container " data-box>
+                                    <figure class="zona__drog__prompt ">
                                         <picture>
                                             <!-- <source media="(min-width: 1130px)" srcset="./img/logo/Geek.png"> -->
                                             <source media="(min-width: 768px)" srcset="./img/logo/insertar.png">
                                             <img src="./img/logo/add.png" alt="agregar">
                                         </picture>
-                                        <figcaption>Agregar una imagén para el producto</figcaption>
-                                        <figcaption class="quitar__texto">Arrastre para agregar una <br>imagén para el producto</figcaption>
-    
+                                        <figcaption class="zona__drog__texto" >Arrastre o haga click para agregar una imagén para el producto</figcaption>
                                     </figure>
+
+                                    <!-- <div class="zona__drog__imagen" ></div> -->
+
+                                    <input type="file" name="myFile" class="drop-zona__input">
         
-                                    <div class="container__boton">
-                                        <span>O</span>
-                                        <input type="file" class="add__boton" data-file>
-                                    </div>
                                 </div>
 
                                 <div class="container__input">
@@ -141,7 +139,6 @@
             </div>
         </footer>
 
-        <script src="./JS/agregarProductos/agregarProductos.js"></script>
         <script type="module" src="/JS/formularios/validacionFormularioAgregarProducto.js"></script>
         <script src="./JS/formularios/validacionFormularioContacto.js"></script>
     </body>

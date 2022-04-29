@@ -8,45 +8,47 @@
     font-weight: bold;
     margin-bottom: 1.6rem;
 }
-.add__img-producto {
+
+.zona__drog {
+    max-width: 300px;
+    height: 20rem;
+    padding: 2.5rem;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 1.6rem;
-}
-.img__container {
-    height: 13.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    background-color: var(--theme-background-pretobranco);
-    border: 1px dashed #C8C8C8;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
     cursor: pointer;
+    color: #cccccc;
+    border: 4px dashed #a1a1ff;
+    border-radius: 10px;
+    margin-bottom: 3rem;
 }
-.img__container figcaption {
-    font-size: var(--small);
+.zona__drog--over {
+    border-style: solid;
+}
+.zona__drog__prompt {
+    /* display: none; */
+}
+.zona__drog__texto {
+    font-size: var(--medium);
+    line-height: 1.5;
     color: var(--text-color-placeholder);
+    text-align: center;
+    margin-top: 2.6rem;
 }
-.img__container figcaption:nth-child(3) {
+.zona__drog__imagen {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+}
+.drop-zona__input {
     display: none;
 }
-
-/* Boton agregar */
-.container__boton {
-    display: none;
-}
-.add__img-producto span {
-    font-size: var(--medium);
-}
-.add__boton {
-    font-size: var(--medium);
-    padding: 1.2rem;
-    border: 1px solid var(--background-bottom-darkblue);
-    cursor: pointer;
-    margin-left: 1rem;
-    color: var(--text-color-darkblue);
-}
-
 /* Formulario de descripción del producto */
 .agregar__producto {
     display: flex;
@@ -129,25 +131,10 @@
         padding-top: 3.2rem;
         padding-bottom: 3.2rem;
     }
-    .add__img-producto {
+    .zona__drog {
         flex-direction: row;
         align-items: center;
-        margin-bottom: 1.6rem;
-    }
-    .img__container {
-        margin-right: 0.9rem;
-        width: 26rem;
-        height: 15rem;
-    }
-    .img__container figcaption:nth-child(2) {
-        display: none;
-    }
-    .img__container figcaption:nth-child(3) {
-        display: block;
-        text-align: center;
-    }
-    .container__boton {
-        display: block;
+        /* margin-bottom: 1.6rem; */
     }
 
 }
@@ -158,17 +145,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
     }
     .add__container-auxiliar {
-        width: 80rem;
+        width: 65rem;
     }
     .add__titulo {
         font-size: var(--big);
     }
-    .img__container {
-        width: 36rem;
-    }   
+  
 }
 
 
