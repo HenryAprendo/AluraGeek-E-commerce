@@ -41,7 +41,7 @@
                         <h1 class="add__titulo">Agregar nuevo producto</h1>
 
                         <div>
-                            <form class="agregar__producto">
+                            <form class="agregar__producto" data-form-agregar>
 
                                 <div class="zona__drog">
 
@@ -72,6 +72,7 @@
                                         pattern="^[a-zA-ZÀ-ÿ\s]{1,20}$"
                                         placeholder="Producto XYZ" 
                                         autocomplete="off"
+                                        data-nombre
                                         >
                                         
                                     <span class="mensaje-error">El campo no puede estar vacio</span>
@@ -87,6 +88,7 @@
                                         pattern="^\d{2,10}$"
                                         placeholder="$ 60,00" 
                                         autocomplete="off"
+                                        data-precio
                                         >
                                         
                                     <span class="mensaje-error">El campo no puede estar vacio</span>
@@ -95,11 +97,11 @@
                                 <div class="container__input ">
                                     <label class="label">Descripción del producto</label>    
                                     <textarea class="login__mensaje input__mensaje input" name="mensaje" id="" cols="30" rows="4" 
-                                    required pattern="^[a-zA-ZÀ-ÿ0-9.,;\s]{1,150}$" minlength="20"  placeholder="Descripción del producto"></textarea>
+                                    data-descripcion required pattern="^[a-zA-ZÀ-ÿ0-9.,;\s]{1,150}$" minlength="20"  placeholder="Descripción del producto"></textarea>
                                     <span class="mensaje-error">El campo no puede estar vacio</span>
                                 </div>
                                 
-                                <input class="login__btn" type="submit" value="Agregar producto">
+                                <input class="login__btn" type="submit" value="Agregar producto" data-agregar>
                             </form>
                         </div>
                     </div>
@@ -145,6 +147,7 @@
 
         <script src="./JS/agregarProductos/agregarProductos.js"></script>
         <script type="module" src="/JS/formularios/validacionFormularioAgregarProducto.js"></script>
+        <script src="./JS/servidor/enviarProducto.js"></script>
         <script src="./JS/formularios/validacionFormularioContacto.js"></script>
     </body>
 </html>

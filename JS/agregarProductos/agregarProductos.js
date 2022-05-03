@@ -1,3 +1,5 @@
+/*Código que carga la imagen desde un input file o arrastrandola */
+
 const inputFile = document.querySelectorAll('.drop-zona__input');
 inputFile.forEach( inputElement => {
     const zonaDropElemento = inputElement.closest('.zona__drog');
@@ -71,6 +73,7 @@ function previsualizarImagenEnZona(zonaDropElemento, file) {
         const reader = new FileReader();
         reader.readAsDataURL(file);
         reader.onload = () => {
+            console.log(reader.result)
             zonaDropImagen.style.backgroundImage = `url('${reader.result}')`; 
         };
     }
