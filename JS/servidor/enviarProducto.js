@@ -1,4 +1,4 @@
-import { enviarDatos } from "./services.js";
+import { serviciosServidor } from "./services.js";
 
 const formularioAgregar = document.querySelector('[data-form-agregar]');
 
@@ -21,48 +21,48 @@ formularioAgregar.addEventListener('submit', e => {
 
         const imagenProducto = reader.result;
         
-        const datos = {
-            nombreProducto,
-            precioProducto,
-            descripcionProducto,
-            imagenProducto,
-        }
+        // const datos = {
+        //     nombreProducto,
+        //     precioProducto,
+        //     descripcionProducto,
+        //     imagenProducto,
+        // }
     
-        enviarDatos(datos);
-        removerImagen();
+        serviciosServidor.crearProducto(nombreProducto, precioProducto, descripcionProducto,imagenProducto, uuid.v4());
     }    
 
     
-    formularioAgregar.reset();
+    // formularioAgregar.reset();
+    // location.reload();
 
 });
 
 
-const removerImagen = () => {
+// const removerImagen = () => {
 
-    let zonaDropImagen = document.querySelector('.zona__drog__imagen');    
+//     let zonaDropImagen = document.querySelector('.zona__drog__imagen');    
 
-    if (zonaDropImagen) {
-        zonaDropImagen.classList.remove('zona__drog__imagen');
-    }
+//     if (zonaDropImagen) {
+//         zonaDropImagen.classList.remove('zona__drog__imagen');
+//     }
     
-    let zonaDropElemento = document.querySelector('.zona__drog__prompt')
+//     let zonaDropElemento = document.querySelector('.zona__drog__prompt')
 
-    if (!zonaDropElemento) {
-        const zonaDrop = document.querySelector('.zona__drog');
-        const content = ` 
-        <figure class="zona__drog__prompt ">
-            <picture>
-                <!-- <source media="(min-width: 1130px)" srcset="./img/logo/Geek.png"> -->
-                <source media="(min-width: 768px)" srcset="./img/logo/insertar.png">
-                <img src="./img/logo/add.png" alt="agregar">
-            </picture>
-            <figcaption class="zona__drog__texto" >Arrastre o haga click para agregar una imagén para el producto</figcaption>
-        </figure>`;
+//     if (!zonaDropElemento) {
+//         const zonaDrop = document.querySelector('.zona__drog');
+//         const content = ` 
+//         <figure class="zona__drog__prompt ">
+//             <picture>
+//                 <!-- <source media="(min-width: 1130px)" srcset="./img/logo/Geek.png"> -->
+//                 <source media="(min-width: 768px)" srcset="./img/logo/insertar.png">
+//                 <img src="./img/logo/add.png" alt="agregar">
+//             </picture>
+//             <figcaption class="zona__drog__texto" >Arrastre o haga click para agregar una imagén para el producto</figcaption>
+//         </figure>`;
 
-        zonaDrop.innerHTML = content;
-    }
-}
+//         zonaDrop.innerHTML = content;
+//     }
+// }
 
 
 
