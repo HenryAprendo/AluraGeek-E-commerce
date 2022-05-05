@@ -9,16 +9,20 @@ const agregarElemento = (parent,child) => {
 }
 
 
-
-export const crearProducto = (seccion) => {
-    seccion.forEach(producto => {
+export const crearProducto = (data, seccionProducto) => {
+    data.forEach( (producto, index) => {
         const nombre = producto.nombre;
         const precio = producto.precio;
         const urlImagen = producto.imagen
 
-        const seccion = document.querySelector('[data-test]');
+        // const seccionProducto = document.querySelector('[data-test]');
 
         const cover = crearElemento('div','card');
+        if (index > 3) {
+            cover.classList.add('card__adicional');
+        }
+
+
         const imagen = crearElemento('img','card_img');
         imagen.alt = 'foto del producto';
         imagen.setAttribute('src', urlImagen);
@@ -41,10 +45,8 @@ export const crearProducto = (seccion) => {
         agregarElemento(cover, coverInfo);
 
         /*Sección principal */
-        agregarElemento(seccion,cover)
+        agregarElemento(seccionProducto,cover)
  
-
-        //     `<div class="card  card__adicional">
     });
    }
 

@@ -3,10 +3,13 @@ import { crearProducto } from "./crearProducto.js";
 
 /*Se encarga de crear los elementos en el DOM para desplegar cada uno de estos productos */
 const visualizarProductos = (datos) => {
-   
-   crearProducto(datos.startwars);
-//    crearProducto(datos.consolas);
-//    crearProducto(datos.diversos);
+    const seccionStart = document.querySelector('[data-primer-grupo]');
+    const seccionConsola = document.querySelector('[data-segundo-grupo]');
+    const seccionDiversos = document.querySelector('[data-tercer-grupo]');
+
+   crearProducto(datos.startwars, seccionStart);
+   crearProducto(datos.consolas, seccionConsola);
+   crearProducto(datos.diversos, seccionDiversos);
 
 }
 
