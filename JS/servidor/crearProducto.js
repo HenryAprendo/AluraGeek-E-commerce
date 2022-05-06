@@ -10,12 +10,19 @@ const agregarElemento = (parent,child) => {
 
 
 export const crearProducto = (data, seccionProducto) => {
+    
     data.forEach( (producto, index) => {
+
+        let contenido = 'Ver producto';
+        
+        // if (key) {
+        //     contenido = producto.id
+        // }
+
         const nombre = producto.nombre;
         const precio = producto.precio;
         const urlImagen = producto.imagen
 
-        // const seccionProducto = document.querySelector('[data-test]');
 
         const cover = crearElemento('div','card');
         if (index > 3) {
@@ -37,7 +44,7 @@ export const crearProducto = (data, seccionProducto) => {
         agregarElemento(coverInfo, infoPrecio);
 
         const infoEnlace = crearElemento('a','card__enlace');
-        infoEnlace.textContent = 'Ver producto';      
+        infoEnlace.textContent = contenido;      
         agregarElemento(coverInfo, infoEnlace);
 
         /*Contenedor de producto */
@@ -45,7 +52,7 @@ export const crearProducto = (data, seccionProducto) => {
         agregarElemento(cover, coverInfo);
 
         /*Sección principal */
-        agregarElemento(seccionProducto,cover)
+        agregarElemento(seccionProducto,cover);
  
     });
    }
