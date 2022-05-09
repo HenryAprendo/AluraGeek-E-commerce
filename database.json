@@ -1,0 +1,20 @@
+{
+    "categories": [{
+        "id": 0,
+        "name": "star-wars",
+        "products": [{
+            "id": 0,
+            "name": "Game 1"
+        }, {
+            "id": 1,
+            "name": "Game 2"
+        }]
+    }, {
+        "id": 1,
+        "name": "consoles",
+        "products": [{
+            "id": 0,
+            "name": "PlayStation 1"
+        }]
+    }]
+}
