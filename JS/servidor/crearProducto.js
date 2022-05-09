@@ -22,13 +22,12 @@ export const crearProducto = (data, seccionProducto) => {
         const nombre = producto.nombre;
         const precio = producto.precio;
         const urlImagen = producto.imagen
-
+        const id = producto.id;
 
         const cover = crearElemento('div','card');
         if (index > 3) {
             cover.classList.add('card__adicional');
         }
-
 
         const imagen = crearElemento('img','card_img');
         imagen.alt = 'foto del producto';
@@ -44,6 +43,7 @@ export const crearProducto = (data, seccionProducto) => {
         agregarElemento(coverInfo, infoPrecio);
 
         const infoEnlace = crearElemento('a','card__enlace');
+        infoEnlace.href = `producto.html?id=${id}`;
         infoEnlace.textContent = contenido;      
         agregarElemento(coverInfo, infoEnlace);
 

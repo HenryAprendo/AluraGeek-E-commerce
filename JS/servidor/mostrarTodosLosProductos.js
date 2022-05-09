@@ -7,7 +7,7 @@ const visualizarTodosLosProductos = (datos) => {
 
     const arrayValores = Object.values(datos);
     const productos = arrayValores.flat();
-    crearProducto(productos, seccionCompleta, true); //El true habilita para mostrar los id 
+    crearProducto(productos, seccionCompleta);  
 
 }
 
