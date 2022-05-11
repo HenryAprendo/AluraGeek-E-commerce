@@ -15,7 +15,7 @@ const listaProductos = () => fetch('http://localhost:3000/productos').then( resp
 
 const obtenerProducto = (id) => {
     console.log(id);
-    return fetch(`http://localhost:3000/productos/startwars/${id}`).then(response => response.json());
+    return fetch(`http://localhost:3000/productos`).then(response => response.json());
 }
 
 /*Objeto general util para exportar cada una de las funciones con las operaciones de la api fetch */
