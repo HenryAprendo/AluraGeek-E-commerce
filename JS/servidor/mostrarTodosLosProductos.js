@@ -4,9 +4,8 @@ import { obtenerProductos } from "./obtenerProductos.js";
 /*Se encarga de crear los elementos en el DOM para desplegar cada uno de estos productos */
 const visualizarTodosLosProductos = (datos) => {
     const seccionCompleta = document.querySelector('[data-grupo-completo]');
-
-    const arrayValores = Object.values(datos);
-    const productos = arrayValores.flat();
+      
+    const productos = datos;
     crearProducto(productos, seccionCompleta);  
 
 }

@@ -33,7 +33,6 @@ const visualizarProductos = (datos) => {
 }
 
  obtenerProductos().then( respuesta => {
-    console.log(respuesta);
     visualizarProductos(respuesta);
  } )
 
