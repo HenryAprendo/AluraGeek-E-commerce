@@ -1,10 +1,10 @@
-const crearElemento = (tipo, clase) => {
+export const crearElemento = (tipo, clase) => {
     const elemento = document.createElement(tipo);
     elemento.classList.add(clase);
     return elemento;
 }
 
-const agregarElemento = (parent,child) => {
+export const agregarElemento = (parent,child) => {
     parent.appendChild(child);
 }
 

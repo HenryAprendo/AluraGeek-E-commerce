@@ -13,15 +13,15 @@ const crearProducto = (nombre, precio, descripcion, imagen, id) => {
 const listaProductos = () => fetch('http://localhost:3000/productos').then( response => response.json());
 
 
-// const obtenerProducto = (id) => {
-//     console.log(id);
-//     return fetch(`http://localhost:3000/productos`).then(response => response.json());
-// }
+/*Obtener un producto especifico */
+const obtenerProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`).then(response => response.json());
+}
 
 /*Objeto general util para exportar cada una de las funciones con las operaciones de la api fetch */
 export const serviciosServidor = {
     crearProducto,
     listaProductos,
-    // obtenerProducto,
+    obtenerProducto,
 }
 
