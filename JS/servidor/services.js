@@ -18,10 +18,19 @@ const obtenerProducto = (id) => {
     return fetch(`http://localhost:3000/productos/${id}`).then(response => response.json());
 }
 
+/* Eliminar un producto */
+const eliminarProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`, {
+        method: 'DELETE'
+    })
+}
+
+
 /*Objeto general util para exportar cada una de las funciones con las operaciones de la api fetch */
 export const serviciosServidor = {
     crearProducto,
     listaProductos,
     obtenerProducto,
+    eliminarProducto,
 }
 
