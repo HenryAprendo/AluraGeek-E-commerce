@@ -6,7 +6,7 @@ const visualizarTodosLosProductos = (datos) => {
     const seccionCompleta = document.querySelector('[data-grupo-completo]');
       
     const productos = datos;
-    crearProducto(productos, seccionCompleta);  
+    crearProducto(productos, seccionCompleta, true);  
 
 }
 

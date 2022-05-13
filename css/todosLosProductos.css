@@ -39,12 +39,26 @@
 }
 .card {
     margin-bottom: 1.6rem;
+    position: relative;
 }
 .card_img {
     Width: 156px;
     Height: 174px;
     object-fit: cover;
 }
+/* Seccion editar - eliminar */
+.card__modificar {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.modificar__eliminar, .modificar__editar {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+/* Información del producto */
 .card__name {
     font-size: var(--small);
     font-weight: 500;

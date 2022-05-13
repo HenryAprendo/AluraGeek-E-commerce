@@ -9,15 +9,11 @@ export const agregarElemento = (parent,child) => {
 }
 
 
-export const crearProducto = (data, seccionProducto) => {
+export const crearProducto = (data, seccionProducto, modificar) => {
     
     data.forEach( (producto, index) => {
 
         let contenido = 'Ver producto';
-        
-        // if (key) {
-        //     contenido = producto.id
-        // }
 
         const nombre = producto.nombre;
         const precio = producto.precio;
@@ -50,6 +46,21 @@ export const crearProducto = (data, seccionProducto) => {
         /*Contenedor de producto */
         agregarElemento(cover, imagen);
         agregarElemento(cover, coverInfo);
+
+
+        // Logos de eliminar y editar;
+        const modificarElemento = crearElemento('div','card__modificar');
+
+        if (modificar) {
+            const eliminar = crearElemento('img','modificar__eliminar');
+            eliminar.setAttribute('src', './img/logo/logoEliminar.png');
+            modificarElemento.appendChild(eliminar);
+            const editar= crearElemento('img','modificar__editar');
+            editar.setAttribute('src', './img/logo/logoEditar.png');
+            modificarElemento.appendChild(editar);
+        }
+
+        agregarElemento(cover, modificarElemento);
 
         /*Sección principal */
         agregarElemento(seccionProducto,cover);
