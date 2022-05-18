@@ -58,6 +58,7 @@ export const crearProducto = (data, seccionProducto, modificar) => {
             modificarElemento.appendChild(eliminar);
             const editar= crearElemento('img','modificar__editar');
             editar.setAttribute('src', './img/logo/logoEditar.png');
+            editar.id = id;
             modificarElemento.appendChild(editar);
         }
 

@@ -26,13 +26,13 @@ const eliminarProducto = (id) => {
 }
 
 /*actualizar un producto*/
-const actualizarProducto = (id) => {
+const actualizarProducto = (nombre, precio, descripcion, imagen, id) => {
     return fetch(`http://localhost:3000/productos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-type': 'application/json'
         },
-        body: json.stringify({nombre, precio, descripcion, imagen})
+        body: JSON.stringify({nombre, precio, descripcion, imagen})
     })
 }
 

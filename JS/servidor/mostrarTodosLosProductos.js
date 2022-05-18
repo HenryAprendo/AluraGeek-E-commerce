@@ -14,12 +14,18 @@ const visualizarTodosLosProductos = (datos) => {
         item.addEventListener('click', () => {
             const id = item.id
             console.log(`Eliminando producto con id ${id}`);
-            // serviciosServidor.eliminarProducto(id).then( response => console.log(response));
+            serviciosServidor.eliminarProducto(id).then( response => console.log(response));
         });
     });
-    
-    
 
+    const editar = document.querySelectorAll('.modificar__editar');
+    editar.forEach( item => {
+        item.addEventListener( 'click', () => {
+            const id = item.id;
+            console.log(`Editando producto con id ${id}`);
+            window.location.href = `/screen/editarProducto.html?id=${id}`
+        });
+    })  
 }
 
 obtenerProductos().then( respuesta => {
