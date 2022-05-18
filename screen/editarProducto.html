@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Principal</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/bases.css">
+        <link rel="stylesheet" href="../css/editarProducto.css">
+        <link rel="stylesheet" href="../css/agregarProductos.css">
+        <link rel="stylesheet" href="../componentes/footer.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cabecera container">
+            <section class="cabecera__icon">
+                <img class="icon__logo" src="../img/logo/Logo.png" alt="logo de alureGeek"> 
+            </section>
+        </header>
+
+        <main>
+            <section class="add-producto">
+                <div class="add__container-principal">
+                    <div class="add__container-auxiliar container">
+                        <h1 class="add__titulo">Editar producto</h1>
+
+                        <div>
+                            <form class="agregar__producto" data-form-agregar>
+
+                                <div class="zona__drog" >
+
+                                    <figure class="zona__drog__prompt ">
+                                        <picture>
+                                            <!-- <source media="(min-width: 1130px)" srcset="./img/logo/Geek.png"> -->
+                                            <source media="(min-width: 768px)" srcset="../img/logo/insertar.png">
+                                            <img src="../img/logo/add.png" alt="agregar">
+                                        </picture>
+                                        <figcaption class="zona__drog__texto" >Arrastre o haga click para agregar una imagén para el producto</figcaption>
+                                    </figure>
+
+                                    <!-- <div class="zona__drog__imagen" ></div> -->
+
+                                    <input type="file" name="myFile" class="drop-zona__input" data-input-file>
+        
+                                </div>
+
+                                <span class=" nombre__producto"></span>
+
+                                <div class="container__input">
+                                    <label class="label">Nombre del producto</label>
+                                    <input 
+                                        class="login__input input__nombre input" 
+                                        type="text" 
+                                        name="nombre" 
+                                        required 
+                                        pattern="^[a-zA-ZÀ-ÿ\s]{1,20}$"
+                                        placeholder="Producto XYZ" 
+                                        autocomplete="off"
+                                        data-nombre
+                                        >
+                                        
+                                    <span class="mensaje-error">El campo no puede estar vacio</span>
+                                </div>
+
+                                <div class="container__input ">
+                                    <label class="label">Precio del producto</label>
+                                    <input 
+                                        class="login__input input__precio input" 
+                                        type="text" 
+                                        name="precio" 
+                                        required 
+                                        pattern="^\d{2,10}$"
+                                        placeholder="$ 60,00" 
+                                        autocomplete="off"
+                                        data-precio
+                                        >
+                                        
+                                    <span class="mensaje-error">El campo no puede estar vacio</span>
+                                </div>
+
+                                <div class="container__input ">
+                                    <label class="label">Descripción del producto</label>    
+                                    <textarea class="login__mensaje input__mensaje input" name="mensaje" id="" cols="30" rows="4" 
+                                    data-descripcion required pattern="^[a-zA-ZÀ-ÿ0-9.,;\s]{1,150}$" minlength="20"  placeholder="Descripción del producto"></textarea>
+                                    <span class="mensaje-error">El campo no puede estar vacio</span>
+                                </div>
+                                
+                                <input class="login__btn" type="submit" value="Editar producto" data-agregar>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>      
+        </main>
+
+        <footer class="rodapie container">
+            <div class="rodapie__container">
+                <p>E-commerce Alura Geek | Henry J Salazar | Oracle Next Education</p>
+            </div>
+        </footer>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        
+    
+        <script src="../JS/agregarProductos/agregarProductos.js"></script>
+        <script type="module" src="../JS/formularios/validacionFormularioAgregarProducto.js"></script>
+        <script type="module" src="../JS/servidor/enviarProducto.js"></script>
+        <!-- <script src="./JS/formularios/validacionFormularioContacto.js"></script> -->
+    </body>
+</html>

@@ -18,6 +18,7 @@ const visualizarTodosLosProductos = (datos) => {
         });
     });
     
+    
 
 }
 

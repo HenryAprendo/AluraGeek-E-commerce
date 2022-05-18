@@ -1,0 +1,21 @@
+.cabecera {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    background-color: var(--theme-background-pretobranco);
+    
+}
+.icon__logo {
+    width: 15rem;
+
+}
+
+/*Responsive design*/
+@media screen and (min-width: 1130px) {
+    .icon__logo {
+        width: 15rem;
+        margin-left: 230px;    
+    }
+}
