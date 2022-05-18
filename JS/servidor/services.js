@@ -25,6 +25,16 @@ const eliminarProducto = (id) => {
     })
 }
 
+/*actualizar un producto*/
+const actualizarProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-type': 'application/json'
+        },
+        body: json.stringify({nombre, precio, descripcion, imagen})
+    })
+}
 
 /*Objeto general util para exportar cada una de las funciones con las operaciones de la api fetch */
 export const serviciosServidor = {
@@ -32,5 +42,32 @@ export const serviciosServidor = {
     listaProductos,
     obtenerProducto,
     eliminarProducto,
+    actualizarProducto,
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
