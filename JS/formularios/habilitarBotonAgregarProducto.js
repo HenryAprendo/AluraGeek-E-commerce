@@ -1,3 +1,6 @@
+import { activarDesactivarBoton } from "./activarDesactivarBoton.js";
+
+
 const inputNombre = document.querySelector('[data-nombre]');
 const inputPrecio = document.querySelector('[data-precio]');
 const inputDescripcion = document.querySelector('[data-descripcion]');
@@ -14,8 +17,20 @@ export const habilitarBotonAgregar = (evento) => {
 
     const validacionInputs = (validarNombre && validarPrecio && validarDescripcion);
 
-    validacionInputs 
-    ? botonAgregar.removeAttribute('disabled') 
-    : botonAgregar.setAttribute('disabled', true)
+    const clase = 'login__btn-activar';
+    activarDesactivarBoton(botonAgregar, validacionInputs, clase);   
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

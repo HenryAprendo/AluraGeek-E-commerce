@@ -1,3 +1,5 @@
+import { activarDesactivarBoton } from './activarDesactivarBoton.js'
+
 const inputEmail = document.querySelector('[data-correo]');
 const inputPassword = document.querySelector('[data-password]');
 
@@ -10,17 +12,9 @@ export const habilitarBotonEntrar = (evento) => {
     const validarEmail = inputEmail.validity.valid;
     const validarPassword = inputPassword.validity.valid;
     const validacionInputs = (validarEmail && validarPassword);
-    console.log(validacionInputs);
-
-    if (validacionInputs) {
-        botonEntrar.removeAttribute('disabled');
-        botonEntrar.classList.add('login__btn-activar');
-    }
-    else {
-        botonEntrar.setAttribute('disabled', true);
-        botonEntrar.classList.remove('login__btn-activar');
-    }
-
+    
+    const clase = 'login__btn-activar';
+    activarDesactivarBoton(botonEntrar, validacionInputs, clase);
 }
 
 /*Autenticación del usuario */
