@@ -44,7 +44,7 @@
 .login__btn {
     width: 35%;
     font-size: var(--small);
-    background-color: var(--text-color-darkblue);
+    background-color: var(--background-bottom-lightblue);
     color: var(--text-color-white);
     padding: 1.2rem 1.6rem;
     border: transparent;
@@ -52,8 +52,9 @@
     align-self: center; 
     cursor: pointer;
 }
-.login__btn:hover {
+.login__btn-activar {
     border: 1px solid black;
+    background-color: var(--text-color-darkblue);
 }
 
 /*Manejo de errores*/

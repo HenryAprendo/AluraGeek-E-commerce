@@ -12,9 +12,14 @@ export const habilitarBotonEntrar = (evento) => {
     const validacionInputs = (validarEmail && validarPassword);
     console.log(validacionInputs);
 
-    validacionInputs 
-    ? botonEntrar.removeAttribute('disabled') 
-    : botonEntrar.setAttribute('disabled', true)
+    if (validacionInputs) {
+        botonEntrar.removeAttribute('disabled');
+        botonEntrar.classList.add('login__btn-activar');
+    }
+    else {
+        botonEntrar.setAttribute('disabled', true);
+        botonEntrar.classList.remove('login__btn-activar');
+    }
 
 }
 

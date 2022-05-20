@@ -56,7 +56,7 @@ formularioEditar.addEventListener('submit', (evento) => {
 
     const reader = new FileReader();
     reader.readAsDataURL(data);
-    reader.onload = e => {
+    reader.onload = evento => {
 
         const imagen = reader.result;
 
